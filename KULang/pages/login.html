@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - ภาควิชาภาษาต่างประเทศ</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <header class="main-header">
+    <div class="logo-container">
+      <div class="logo-left">
+        <img src="../img/KU-logo-th.png" alt="KU Logo" class="logo-img" />
+        <div class="logo-text">
+          <div class="logo-title" data-th="ภาควิชาภาษาต่างประเทศ" data-en="Department of Foreign Languages">ภาควิชาภาษาต่างประเทศ</div>
+          <div class="logo-subtitle" data-th="คณะมนุษยศาสตร์ มหาวิทยาลัยเกษตรศาสตร์" data-en="Faculty of Humanities Kasetsart University">คณะมนุษยศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</div>
+        </div>
+      </div>
+
+      <div class="lang-toggle">
+        <img src="../img/thai-flag.webp" alt="Thai" class="flag" id="thai-flag" />
+        <img src="../img/uk-flag.png" alt="English" class="flag" id="english-flag" />
+      </div>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <div class="login-banner-container">
+        <img src="../img/Banner.jpg" alt="Login Background" class="login-banner" />
+    </div>
+
+    <form class="login-form" id="loginForm">
+        <h2 class="login-heading" data-th="เข้าสู่ระบบ" data-en="Login">เข้าสู่ระบบ</h2>
+        <label for="username" data-th="ชื่อผู้ใช้" data-en="Username:">ชื่อผู้ใช้:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password" data-th="รหัสผ่าน" data-en="Password:">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit" class="login" data-th="ส่ง" data-en="Submit">ส่ง</button>
+    </form>
+    
+    <div class="spinner-overlay hidden" id="spinnerOverlay">
+      <div class="spinner-content">
+        <img src="../img/KU-logo-th.png" alt="Checking..." class="spinner-image" />
+        <p class="spinner-text" id="spinnerText" data-th="การรับรองความถูกต้อง..." data-en="Authenticating...">การรับรองความถูกต้อง...</p>
+      </div>
+    </div>
+
+
+
+</main>
+
+<footer class="footer-layout">
+        <img src="../img/KU-logo-eng.png" alt="Left Image" class="side-image" />
+        <img src="../img/faculty-humanities.png" alt="Center Image" class="center-image" />
+        <img src="../img/KU-logo-th.png" alt="Right Image" class="side-image" />
+    </footer>
+
+    <div class="top-bar"></div>
+
+
+  <script src="../scripts/scripts.js"></script>
+</body>
+</html>

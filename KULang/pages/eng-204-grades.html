@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ภาควิชาภาษาต่างประเทศ มหาวิทยาลัยเกษตรศาสตร์</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body data-course-id="ENG204" data-page-type="gradebook">
+    <div class="top-bar"></div>
+
+    <header class="main-header">
+
+        <div class="logo-container">
+            <div class="logo-left">
+                <img src="../img/KU-logo-th.png" alt="KU Logo" class="logo-img" />
+                <div class="logo-text">
+                <div class="logo-title" data-th="ภาควิชาภาษาต่างประเทศ" data-en="Department of Foreign Languages">ภาควิชาภาษาต่างประเทศ</div>
+                <div class="logo-subtitle" data-th="คณะมนุษยศาสตร์ มหาวิทยาลัยเกษตรศาสตร์" data-en="Faculty of Humanities Kasetsart University">คณะมนุษยศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</div>
+            </div>
+        </div>
+
+            <div class="lang-toggle">
+                <img src="../img/thai-flag.webp" alt="Thai" class="flag" id="thai-flag" />
+                <img src="../img/uk-flag.png" alt="English" class="flag" id="english-flag" />
+            </div>
+        </div>
+    
+
+    <img src="../img/Banner.jpg" alt="Banner Image" class="full-banner" />
+
+    </header>
+
+    <main>
+        <div class="main-border-wrapper">
+            <div class="main-border-content">
+                <div class="button-column">
+                    <h1 class="section-header" data-th="กรอกเกรด: ENG 204" data-en="Enter Grades: ENG 204">Enter Grades: ENG 204</h1>
+                    <div class="section-select-wrapper">
+                        <label for="sectionSelect" class="section-select-label">Select Section:</label>
+                            <select id="sectionSelect" class="section-select">
+                                <option value="" disabled selected>Select Section</option>
+                        <!-- options 1 to 40 will be added by JS -->
+                            </select>
+                    </div>
+
+                    <div id="gradebookDisplay" class="gradebook-display" style="overflow-x: auto;" data-th="กรุณาเลือกส่วนเพื่อดูสมุดคะแนน" data-en="Please select a section to view the gradebook">
+                    กรุณาเลือกส่วนเพื่อดูสมุดคะแนน
+                    </div>
+
+                    <div class="gradebook-wrapper">
+                        <table class="gradebook-table">
+                            <thead>
+                                <tr>
+                                    <th class="assignment-header" data-th="รหัสนักศึกษา" data-en="Student ID">รหัสนักศึกษา</th>
+                                    <th class="assignment-header" data-th="ชื่อ" data-en="Student Name">ชื่อ</th>
+                                    <th class="assignment-header" data-th="งานที่ 1" data-en="Assignment 1">งานที่ 1</th>
+                                    <th class="assignment-header" data-th="งานที่ 2" data-en="Assignment 2">งานที่ 2</th>
+                                    <th class="assignment-header" data-th="การสอบกลางภาค" data-en="Midterm Exam">การสอบกลางภาค</th>
+                                    <th class="assignment-header" data-th="งานที่ 3" data-en="Assignment 3">งานที่ 3</th>
+                                    <th class="assignment-header" data-th="งานที่ 4" data-en="Assignment 4">งานที่ 4</th>
+                                    <th class="assignment-header" data-th="สอบปลายภาค" data-en="Final Exam">สอบปลายภาค</th>
+                                    <th class="assignment-header" data-th="การเข้าร่วม" data-en="Attendance">การเข้าร่วม</th>
+                                    <th class="assignment-header" data-th="การมีส่วนร่วม" data-en="Participation">การมีส่วนร่วม</th>
+                                    <th class="assignment-header" data-th="รวม" data-en="Total">รวม</th>
+                                    <th class="assignment-header" data-th="เปอร์เซ็นต์" data-en="Percentage">เปอร์เซ็นต์</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1001</td>
+                                <td>นักศึกษาที่ 1</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1002</td>
+                                <td>นักศึกษาที่ 2</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1003</td>
+                                <td>นักศึกษาที่ 3</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1004</td>
+                                <td>นักศึกษาที่ 4</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1005</td>
+                                <td>นักศึกษาที่ 4</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1006</td>
+                                <td>นักศึกษาที่ 6</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1007</td>
+                                <td>นักศึกษาที่ 7</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1008</td>
+                                <td>นักศึกษาที่ 8</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1009</td>
+                                <td>นักศึกษาที่ 9</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            <tr>
+                                <td>1010</td>
+                                <td>นักศึกษาที่ 10</td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="50" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td><input type="number" min="0" max="10" /></td>
+                                <td class="total-cell">0</td>
+                                <td class="percent-cell">0%</td>
+                            </tr>
+                            
+                            
+                            
+                            </tbody>
+                        </table>
+                        </div>
+
+                </div>  
+            </div>
+        </div>
+
+             <div class="button-row-wrapper">
+                <a href="../index.html" class="styled-button" data-th="กลับหน้าแรก" data-en="Return Home">กลับหน้าแรก</a>
+                <button id="saveBtn" class="styled-button" data-no-nav="true" data-th="บันทึกข้อมูล" data-en="Save">บันทึกข้อมูล</button>
+               
+                
+                <div class="spinner-overlay hidden" id="spinnerOverlay">
+                    <div class="spinner-content">
+                        <img src="../img/KU-logo-th.png" alt="Loading..." class="spinner-image" />
+                        <p class="spinner-text" id="spinnerText">Saving Data...</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="export-button-wrapper">
+                <button id="exportGradeExcelBtn" class="styled-button export-button">Export Grades to Excel</button>
+
+            </div>
+        
+
+        
+
+        
+
+    </main>
+
+
+    <footer class="footer-layout">
+        <img src="../img/KU-logo-eng.png" alt="Left Image" class="side-image" />
+        <img src="../img/faculty-humanities.png" alt="Center Image" class="center-image" />
+        <img src="../img/KU-logo-th.png" alt="Right Image" class="side-image" />
+    </footer>
+    <div class="top-bar"></div>
+<script>
+        window.currentCourse = "ENG204"; // Change course per page!!!
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>  
+<script src="../scripts/scripts.js"></script>
+</body>
+</html>

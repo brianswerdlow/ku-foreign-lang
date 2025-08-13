@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ภาควิชาภาษาต่างประเทศ มหาวิทยาลัยเกษตรศาสตร์</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+    <body data-course-id="ENG321" data-page-type="attendance">
+    <div class="top-bar"></div>
+
+    <header class="main-header">
+
+        <div class="logo-container">
+            <div class="logo-left">
+                <img src="../img/KU-logo-th.png" alt="KU Logo" class="logo-img" />
+                <div class="logo-text">
+                <div class="logo-title" data-th="ภาควิชาภาษาต่างประเทศ" data-en="Department of Foreign Languages">ภาควิชาภาษาต่างประเทศ</div>
+                <div class="logo-subtitle" data-th="คณะมนุษยศาสตร์ มหาวิทยาลัยเกษตรศาสตร์" data-en="Faculty of Humanities Kasetsart University">คณะมนุษยศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</div>
+            </div>
+        </div>
+
+            <div class="lang-toggle">
+                <img src="../img/thai-flag.webp" alt="Thai" class="flag" id="thai-flag" />
+                <img src="../img/uk-flag.png" alt="English" class="flag" id="english-flag" />
+            </div>
+        </div>
+
+    
+
+    <img src="../img/Banner.jpg" alt="Banner Image" class="full-banner" />
+
+    </header>
+    
+
+    <main>
+        <div class="main-border-wrapper">
+            <div class="main-border-content">
+                <div class="button-column">
+                    <h1 class="section-header" data-en="Select Section to View Attendance" data-th="บันทึกการเข้าชั้นเรียน">ENG321 – บันทึกการเข้าชั้นเรียน</h1>
+                    
+                     <!-- Section Select -->
+                    <div class="section-select-wrapper">
+                        <label for="sectionSelect" class="section-select-label">เลือก Section:</label>
+                        <select id="sectionSelect" class="section-select">
+                            <option value="">-- เลือก Section --</option>
+                        </select>
+                    </div>
+
+                    <div class="section-select-wrapper" id="daySelectWrapper" style="display: none;">
+                        <label class="section-select-label" datdatafor="daySelect" data-en="Select Day" data-th="เลือกวัน">เลือกวัน:</label>
+                        <select id="daySelect" class="section-select"></select>
+                        <button id="markAllPresentBtn" class="styled-button" data-no-nav="true" style="margin-left:10px;" data-en="Mark All Present" data-th="มาร์คว่าเข้าเรียน">มาร์คว่าเข้าเรียน</button>
+                        <button id="markAllAbsentBtn" class="styled-button red-button" data-no-nav="true" style="margin-left:10px;" data-en="Mark All Absent" data-th="มาร์คว่าไม่เข้าเรียน">มาร์คว่าไม่เข้าเรียน</button>
+
+                    </div>
+
+
+
+
+                     <!-- Attendance Table -->
+                    <table class="attendance-table">
+                        <thead>
+                            <tr>
+                                <th data-en="Student ID" data-th="รหัสนักศึกษา">รหัสนักศึกษา</th>
+                                <th data-en="Name" data-th="ชื่อ">ชื่อ</th>
+                                <th data-en="Nickname" data-th="ชื่อเล่น">ชื่อเล่น</th>
+                                <th>%</th> 
+                                <!-- The 30 sessions will be added dynamically -->
+                            </tr>
+                            </thead>
+
+                        <tbody id="attendanceBody"></tbody>
+                    </table>
+                </div>  
+            </div>
+        </div>
+
+        <div class="button-row-wrapper">
+                <a href="../index.html" class="styled-button" data-th="กลับหน้าแรก" data-en="Return Home">กลับหน้าแรก</a>
+                <button id="saveAttendanceBtn" class="styled-button" data-no-nav="true" data-th="บันทึกข้อมูล" data-en="Save">บันทึกข้อมูล</button>
+
+               
+                
+                <div class="spinner-overlay hidden" id="spinnerOverlay">
+                    <div class="spinner-content">
+                        <img src="../img/KU-logo-th.png" alt="Loading..." class="spinner-image" />
+                        <p class="spinner-text" id="spinnerText">Saving Data...</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="export-button-wrapper">
+                <button id="exportGradeExcelBtn" class="styled-button export-button" data-en="Export Attendance Data to Excel" data-th="ส่งออกข้อมูลการเข้าร่วมไปยัง Excel">ส่งออกข้อมูลการเข้าร่วมไปยัง Excel</button>
+
+            </div>
+
+    <footer class="footer-layout">
+        <img src="../img/KU-logo-eng.png" alt="Left Image" class="side-image" />
+        <img src="../img/faculty-humanities.png" alt="Center Image" class="center-image" />
+        <img src="../img/KU-logo-th.png" alt="Right Image" class="side-image" />
+    </footer>
+    <div class="top-bar"></div>
+<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+<script src="../scripts/scripts.js"></script>
+</body>
+</html>
+
